@@ -12,8 +12,15 @@ database. Explicit analyst names and types take precedence.
 
 ## Install
 
-The plugin targets **Binary Ninja 6.0, core ABI 187**. Building requires
-Rust 1.91.1 or later and libclang.
+Builds require Rust and libclang. On Linux, [Knife](https://github.com/redthing1/binja_knife)
+builds against your managed runtime's SDK. Run this from the checkout.
+
+```sh
+bnk runtime plugins add . --ref master --build cargo
+```
+
+For a manual build, the pinned SDK targets **core ABI 187**, tested with
+Binary Ninja 6.0.10905. Use Rust 1.91.1 or later.
 
 ```sh
 BINARYNINJADIR=/path/to/binaryninja cargo build --release --locked

@@ -1,8 +1,7 @@
 # Development
 
 Build and install the plugin as described in the [README](../README.md#install).
-The Binary Ninja Rust SDK is pinned in `Cargo.toml` and `Cargo.lock`; use a core
-with the matching ABI.
+The checks below use the SDK pinned in `Cargo.lock`.
 
 ## Structure
 
